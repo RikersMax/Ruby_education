@@ -1,0 +1,12 @@
+January, 100
+February, 20
+March, 50
+April, 30
+May, 20
+June, 50
+July, 60
+August, 25
+September, 70
+October, 40
+November, 10
+December, 40

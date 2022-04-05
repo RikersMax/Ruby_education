@@ -1,0 +1,31 @@
+# encoding: cp1251
+game = ["êàìåíü", "íîæíèöè", "áóìàãà"]
+puts ("ââåäèòå âàğèàíò: 0 - êàìåíü, 1 - íîæíèöû, 2 - áóìàãà")
+user = gets.to_i
+rand = rand(3)
+if user.class == Integer
+  if (user >= 0 && user <= 2)
+    if user == rand
+      puts ("Âû âûáğàëè #{game[user]}\nÍè÷üÿ")
+    else
+      if user == 0 && rand == 1
+        puts ("Âû âûáğàëè #{game[user]}\nÊîìïüşòåğ âûáğàë #{game[rand]}\nÂû âûéãàğëè")
+      elsif user == 1 && rand == 2
+        puts ("Âû âûáğàëè #{game[user]}\nÊîìïüşòåğ âûáğàë #{game[rand]}\nÂû âûéãàğëè")
+      elsif user == 2 && rand == 0
+        puts ("Âû âûáğàëè #{game[user]}\nÊîìïüşòåğ âûáğàë #{game[rand]}\nÂû âûéãàğëè")
+      elsif user == 1 && rand == 0
+        puts ("Âû âûáğàëè #{game[user]}\nÊîìïüşòåğ âûáğàë #{game[rand]}\nÂû ïğîèãğàëè")
+      elsif user == 2 && rand == 1
+        puts ("Âû âûáğàëè #{game[user]}\nÊîìïüşòåğ âûáğàë #{game[rand]}\nÂû ïğîèãğàëè")
+      elsif user == 0 && rand == 2
+        puts ("Âû âûáğàëè #{game[user]}\nÊîìïüşòåğ âûáğàë #{game[rand]}\nÂû ïğîèãğàëè")
+      end
+    end
+  else
+    puts ("Âûáåğèòå îò 0 äî 2")
+  end
+else
+  puts ("Ââåäèòå ÷èñëî")
+end
+

@@ -21,7 +21,7 @@ arr1 = ['a', 'b', 'c', 'g']
 arr2 = ['a', 'b', 'c', 'g', 'c']
 puts (arr1 - arr2).empty?
 system ping vk.ru
-=end
+
 
 s = 0
 a = '1112031584'
@@ -35,3 +35,11 @@ while i < arr.length do
 	i = i + 1
 	puts s
 end
+
+print 1, 2, 3
+$, = ','
+print 1 , 2
+=end
+x = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+puts x[0, 10] + '...' + x[11, 15]
+

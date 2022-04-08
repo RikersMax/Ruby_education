@@ -1,15 +1,22 @@
 require "pony"
+require "translit"
+
 my_mail = "max_112_max@mail.ru"
-puts ("password for mail: #{my_mail}")
+print ("Enter password for mail: #{my_mail}\npassword: ")
 password = STDIN.gets.chomp
-puts ('whim to send?')
+
+print ('whim to send? ')
 send_to = STDIN.gets.chomp
-puts ('what to write?')
+
+print ('What to write? ')
 body = STDIN.gets.chomp
+
+print ('Enter letter subject: ')
+subject = gets.strip.chomp.capitalize.encode('UTF-8')
 
 Pony.mail(
 {
- 	:subject => 'hello from ruby',
+ 	:subject => Translit.convert(subject),
 	:body => body,
 	:to => send_to,
 	:from => my_mail,

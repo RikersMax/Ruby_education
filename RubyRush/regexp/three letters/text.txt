@@ -1,0 +1,3 @@
+The 4680 cells are twice as large as Tesla's existing units, but they have five times the capacity.
+That lets Tesla either extend the range of its vehicles or use fewer batteries to maintain the same range, potentially shrinking costs.
+In the new Model Y version, they're implemented in a structural battery pack that should reduce complexity and weight, further improving efficiency.

@@ -4,5 +4,5 @@ puts text.scan(/\b.*[^0-9]\.txt/)
 puts text.scan(/\[\]/)
 arr = ['11', '22', '33', '44', '55']
 arr.each {|x| print (x.scan(/../))}
-
-
+s = "eee\b\baaa"
+puts s.scan(/[\b]/)
